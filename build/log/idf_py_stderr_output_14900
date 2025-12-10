@@ -1,0 +1,208 @@
+Command: C:\Users\autoh\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe D:\Embedded\esp\esp-idf\tools/idf_monitor.py -p COM9 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace D:\Embedded\esp_project\clock_mechanism_device\build\clock_mechanism_device.elf D:\Embedded\esp_project\clock_mechanism_device\build\bootloader\bootloader.elf --force-color -m 'C:\Users\autoh\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe' 'D:\Embedded\esp\esp-idf\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4004c51e: [0;33muart_rx_one_char[0m[0m in [0;32mROM[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpnosalmyt"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpnosalmyt\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpctrctpa6"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpctrctpa6\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpo7a40ajc"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpo7a40ajc\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpy7kcioaq"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpy7kcioaq\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmp2oexdfgd"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmp2oexdfgd\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0;33m.[0m[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpfw2nbp_n"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpfw2nbp_n\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m.[0m[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpjakuawkb"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpjakuawkb\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0;33m.[0m[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmp7y0u0mk3"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmp7y0u0mk3\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpd8vx2dh0"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpd8vx2dh0\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmp1czyfkhx"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmp1czyfkhx\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0;33m.[0m[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmp5odgfg2a"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmp5odgfg2a\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0;33m.[0m[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpxd_ox4k0"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpxd_ox4k0\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0;33m.[0m[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpe3iej901"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpe3iej901\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200cc6e: [0;33mesp_now_initialization[0m[0m at [0;32mD:/Embedded/esp_project/clock_mechanism_device/main/esp-now_protocol/esp-now_protocol.c[0m[0m:[1;31m24[0m
+[0m--- 0x40386c6d: [0;33m_esp_error_check_failed[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40386cb8: [0;33mpanic_abort[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m497[0m
+[0m--- 0x40386c76: [0;33mesp_vApplicationTickHook[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0;33m.[0m[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\clock_mechanism_device.elf', '-ex', 'add-symbol-file D:\\Embedded\\esp_project\\clock_mechanism_device\\build\\bootloader\\bootloader.elf', '-ex', 'target remote | "C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpcf93k0yu"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'add symbol table from file "D:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf"\r\nD:Embeddedesp_projectclock_mechanism_devicebuildbootloaderbootloader.elf: No such file or directory.\r\nerror starting child process \'C:\\Users\\autoh\\.espressif\\python_env\\idf6.0_py3.13_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\autoh\\AppData\\Local\\Temp\\tmpcf93k0yu\': CreateProcess: No such file or directory\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x40386d9e: [0;33mesp_restart_noos[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m116[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/Embedded/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m
