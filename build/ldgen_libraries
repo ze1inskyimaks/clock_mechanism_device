@@ -157,3 +157,6 @@ D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/mqtt/libmqtt.a
 D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/rt/librt.a
 D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/spiffs/libspiffs.a
 D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/main/libmain.a
+D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/i2cdev/libi2cdev.a
+D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/driver/libdriver.a
+D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/dht/libdht.a

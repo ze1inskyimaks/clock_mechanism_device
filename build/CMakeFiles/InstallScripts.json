@@ -124,7 +124,10 @@
 		"D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/spiffs/cmake_install.cmake",
 		"D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/ulp/cmake_install.cmake",
 		"D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/usb/cmake_install.cmake",
-		"D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/main/cmake_install.cmake"
+		"D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/main/cmake_install.cmake",
+		"D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/esp_idf_lib_helpers/cmake_install.cmake",
+		"D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/i2cdev/cmake_install.cmake",
+		"D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/dht/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

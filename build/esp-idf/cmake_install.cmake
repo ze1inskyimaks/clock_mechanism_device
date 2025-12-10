@@ -587,6 +587,21 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/main/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/esp_idf_lib_helpers/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/i2cdev/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Embedded/esp_project/clock_mechanism_device/build/esp-idf/dht/cmake_install.cmake")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)

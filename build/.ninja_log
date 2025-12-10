@@ -5,9 +5,9 @@
 144	188	7870141113547929	project_elf_src_esp32c3.c	4de4d8a19df4fcc0
 11048	11929	7870141222201673	esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_owe.c.obj	c4d2bc57301b8fe4
 156	577	7870141114746976	D:/Embedded/esp_project/clock_mechanism_device/build/partition_table/partition-table.bin	2f52596907196b49
+30932	31725	7870141421038825	esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.obj	1fd0e51d4f0c809e
 50692	51194	7870141618643994	esp-idf/riscv/CMakeFiles/__idf_riscv.dir/interrupt_intc.c.obj	32af6ba213d7ee4b
 41499	42274	7870141526714439	esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdh.c.obj	76ce01565649e842
-30932	31725	7870141421038825	esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.obj	1fd0e51d4f0c809e
 144	188	7870141113547929	D:/Embedded/esp_project/clock_mechanism_device/build/project_elf_src_esp32c3.c	4de4d8a19df4fcc0
 118	1737	7870141128993952	esp-idf/esp_system/ld/memory.ld	7314842b16fcae14
 36054	36585	7870141472257401	esp-idf/esp_hal_i2c/CMakeFiles/__idf_esp_hal_i2c.dir/esp32c3/i2c_periph.c.obj	20920855a8381a70
@@ -60,10 +60,10 @@
 1791	3218	7870141129631432	esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/util/ctrl_sock.c.obj	b4cdcf6f7f9f8cad
 1750	3267	7870141129222928	esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/src/esp_https_ota.c.obj	6c556b66025633a6
 5077	5795	7870141162488954	esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/lib_printf.c.obj	26d5b148f2bb5d46
-3201	4165	7870141143728056	esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_platform.c.obj	998ca791507b5c6
 27195	27387	7870141383677546	esp-idf/cxx/libcxx.a	6bd3ad94a206a671
-4165	5697	7870141153373350	esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls.c.obj	3db71b33c6bbb6c8
+3201	4165	7870141143728056	esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/i2s_platform.c.obj	998ca791507b5c6
 49806	50339	7870141609779069	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c3/esp_efuse_rtc_calib.c.obj	bcc4b87147de5b5e
+4165	5697	7870141153373350	esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls.c.obj	3db71b33c6bbb6c8
 1762	3296	7870141129338644	esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_parse.c.obj	f9ebfa2d25558f55
 4143	5000	7870141153144116	esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj	ab9f011482de124d
 25640	26017	7870141368118673	esp-idf/nvs_flash/libnvs_flash.a	42ff7a03ae3725b7
